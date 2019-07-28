@@ -5,12 +5,8 @@ end
 
 
 # re-define your #position_taken? method here, so that you can use it in the #valid_move? method above.
-def position_taken?(board, num_taken)
-    if board[num_taken] == " " || board[num_taken] == "" || board[num_taken] == nil
-    &&
-    if board[num_taken] 
-    return false
-  else
+ if (position_taken?(board, index)) == false && (on_board?(index) == true)
     return true
-    end
+  else
+    return false
   end
